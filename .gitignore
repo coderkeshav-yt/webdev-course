@@ -12,30 +12,50 @@
 
 # testing
 /coverage
+.nyc_output
+*.lcov
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 .pnpm-debug.log*
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# build output
+/.next/
+.out/
+/.nuxt
+dist
+.build
+.cache
+.parcel-cache
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts
 
 # env files (can opt-in for committing if needed)
 .env*
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# vercel
+# Vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Misc
+.DS_Store
+*.pem
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
